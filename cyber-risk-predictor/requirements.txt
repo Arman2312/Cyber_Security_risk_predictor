@@ -1,0 +1,26 @@
+# ==============================================================================
+# AuthRisk-LR: Real-Time Cyber Authentication Risk Engine
+# Dependencies Specification (requirements.txt)
+# Compatible with Python 3.10+
+# ==============================================================================
+
+# --- Machine Learning & Mathematical Processing ---
+# SRS 4.1: ML Toolchain constraints: Scikit-Learn >= 1.3.0, NumPy >= 1.24.0, Pandas >= 2.0.0
+scikit-learn>=1.3.0
+numpy>=1.24.0
+pandas>=2.0.0
+joblib>=1.3.0
+
+# --- Web Framework & API Layer ---
+# SRS 1.2, 2.4, 4.1: FastAPI with Pydantic v2 and Uvicorn ASGI server
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+pydantic>=2.4.0
+pydantic-settings>=2.0.0
+python-dotenv>=1.0.0
+
+# --- Testing, Benchmarking & Verification ---
+# SRS 5.4, 6.0: Automated test suite (>= 85% coverage) & httpx benchmarking (NFR-PERF-1)
+pytest>=7.4.0
+pytest-cov>=4.1.0
+httpx>=0.25.0

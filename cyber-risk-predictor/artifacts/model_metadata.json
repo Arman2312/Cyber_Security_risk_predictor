@@ -1,0 +1,28 @@
+{
+  "model_version": "1.0.0",
+  "algorithm": "Ridge Logistic Regression (L2)",
+  "features": [
+    "failed_attempts_5m",
+    "ip_reputation_score",
+    "velocity_kmh",
+    "is_tor_or_vpn",
+    "country_mismatch",
+    "hour_anomaly_score",
+    "device_trust_score"
+  ],
+  "intercept": -6.2306237822478225,
+  "coefficients": {
+    "failed_attempts_5m": 1.9450123075048613,
+    "ip_reputation_score": 2.287408197841286,
+    "velocity_kmh": 0.653228473839097,
+    "is_tor_or_vpn": 0.9223993661700747,
+    "country_mismatch": 0.44031544512085347,
+    "hour_anomaly_score": 1.440288745482639,
+    "device_trust_score": -2.089193219961627
+  },
+  "metrics": {
+    "roc_auc": 1.0,
+    "f1_score": 1.0,
+    "test_samples": 2000
+  }
+}
